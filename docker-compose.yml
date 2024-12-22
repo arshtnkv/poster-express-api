@@ -7,7 +7,7 @@ services:
     depends_on:
       - react-app
     environment:
-      DATABASE_URL: 'mongodb+srv://poster:PuYC7eZv9JwhSLvY@cluster0.zoj4t.mongodb.net/poster?retryWrites=true&w=majority&appName=Cluster0'
+      DATABASE_URL: ${DATABASE_URL}
 
   react-app: # React-приложение
       build: ../poster-react # Путь к вашему React-приложению относительно корня вашего проекта
